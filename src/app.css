@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+}
+
+.movies {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.box-details {
+  background-color: rgb(241, 241, 241);
+}
+
+.title-details {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.details {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: larger;
+  color: rgb(97, 89, 99);
+}
+
+.site {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: medium;
+}
