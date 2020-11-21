@@ -4,6 +4,23 @@
   background-color: rgb(241, 241, 241);
 }
 
+.header {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: larger;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  background-color: rgb(155, 155, 167);
+}
+
+.playlist {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+}
+
 .movies {
   font-family: sans-serif;
   text-align: center;
@@ -13,20 +30,44 @@
   background-color: rgb(241, 241, 241);
 }
 
-.title-details {
+.title {
   font-family: sans-serif;
   text-align: center;
+  color: rgb(85, 58, 60);
 }
 
 .details {
   font-family: sans-serif;
   text-align: center;
   font-size: larger;
-  color: rgb(97, 89, 99);
+  color: rgb(99, 92, 89);
 }
 
 .site {
   font-family: sans-serif;
   text-align: center;
   font-size: medium;
+}
+
+.btn {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: medium;
+  border-radius: 5px;
+  width: 100px;
+  background-color: rgb(155, 155, 167);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.favoritar {
+  margin-left: 45%;
+}
+
+.remover {
+  text-align: center;
+  font-size: xx-small;
+  width: 23px;
 }
