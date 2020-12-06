@@ -13,7 +13,7 @@ const Playlist = () => {
     <div className="header">
         <Link to="/">Inicio </Link>
         &nbsp;&nbsp;
-        <Link to="/playlist">Meus Favoritos </Link>
+        <Link to="/playlist">Favoritos </Link>
     </div>
     <div className="playlist">
         <br />

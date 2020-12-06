@@ -3,13 +3,14 @@ import { MoviesService } from '../services/MoviesService';
 import { useSelector, useDispatch } from 'react-redux';
 import { moviesList, insertPlaylist } from '../actions/MoviesActions';
 import { Link } from 'react-router-dom';
+import { useDetails } from '../hooks/useDetails';
 
 export const MovieDetails = (props) => {
   const dispatch = useDispatch();
   const moviesStore = useSelector(s => s.movies);
   const { movies } = moviesStore;
   const id = props?.match?.params?.id;
-
+  useDetails({ id });
 
 
   useEffect(() => {
@@ -20,7 +21,6 @@ export const MovieDetails = (props) => {
   }, []);
 
 
-
   return (
     !movies[id]
       ? <></>
@@ -28,7 +28,7 @@ export const MovieDetails = (props) => {
         <div className="header">
           <Link to="/">Inicio </Link>
           &nbsp;&nbsp;
-          <Link to="/playlist">Meus Favoritos </Link>
+          <Link to="/playlist">Favoritos </Link>
         </div>
         <div className='box-details'>
           <br />

@@ -1,21 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { } from 'react';
 import { Link } from 'react-router-dom';
-import { MoviesService } from '../services/MoviesService';
+import { useMovies } from '../hooks/useMovies';
+
 
 export const MoviesList = () => {
-  const [movies, setMovies] = useState(undefined);
-
-  useEffect(() => {
-    MoviesService.getPopularMovies()
-      .then((res) => setMovies(res))
-  }, []);
+  const movies = useMovies();
 
   return (
     <>
       <div className="header">
         <Link to="/">Inicio </Link>
         &nbsp;&nbsp;
-        <Link to="/playlist">Meus Favoritos </Link>
+        <Link to="/playlist">Favoritos </Link>
       </div>
       <div className="App">
         <br />
