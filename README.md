@@ -6,7 +6,9 @@ https://react-movies-app.vercel.app/
 
 
 Para rodar a aplicação local: 
+
 ==> npm install
+
 ==> npm start
 
 
