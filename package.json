@@ -14,6 +14,7 @@
     "redux": "^4.0.5"
   },
   "devDependencies": {
+    "@testing-library/react": "^11.2.2",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "@types/react-router-dom": "^5.1.6",
@@ -24,6 +25,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "esLintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jtest"
+    ]
   },
   "browserslist": [
     ">0.2%",
