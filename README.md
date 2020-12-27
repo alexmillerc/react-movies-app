@@ -1,5 +1,7 @@
-REAC-MOVIES-APP
+REACT-MOVIES-APP
 
 Para rodar a aplicação: 
-npm install
-npm start
+
+==> npm install
+
+==> npm start
